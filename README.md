@@ -1,4 +1,4 @@
-# 📌 Distributed Deadlock Detection — Wait-for Graph Simulation  
+# Distributed Deadlock Detection — Wait-for Graph Simulation  
 **Group 08 — Distributed Systems**
 
 ---
@@ -47,7 +47,7 @@ This project uses only Python’s built-in libraries:
 | `collections` | Wait-for Graph implementation (`defaultdict`) |
 | `os` | Ensuring clean startup state |
 
-✔ No external installations required.
+No external installations required.
 
 ---
 
@@ -58,27 +58,19 @@ VS Code Tasks will automatically open all required terminals.
 
 Follow these exact steps:
 
----
-
-Open the project folder in VS Code
+**Open the project folder in VS Code**
 
 Group_08_WaitForGraph
 
----
-
-Press the command palette shortcut
+**Press the command palette shortcut**
 
 Ctrl + Shift + P
 
----
-
-Type and select:
+**Type and select:**
 
 Run Task
 
----
-
-Choose the task:
+**Choose the task:**
 
 Run All (Coordinator + T1 + T2)
 
@@ -90,13 +82,11 @@ This automatically launches:
 
 All three begin executing simultaneously.
 
----
+**When prompted:**
 
-When prompted:
+“Select a problem matcher for this task”
 
-**“Select a problem matcher for this task”**
-
-Choose:
+**Choose:**
 
 Continue without scanning the task output
 
