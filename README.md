@@ -1,9 +1,9 @@
 # 📌 Distributed Deadlock Detection — Wait-for Graph Simulation  
-**Group 08 — Distributed Systems Lab Project**
+**Group 08 — Distributed Systems**
 
 ---
 
-## 📝 Overview
+## Overview
 This project simulates **distributed deadlock detection** using a **Coordinator–Transaction model**.  
 Multiple transactions request locks on shared resources, and the coordinator detects **cycles** in the  
 Wait-for Graph (WFG). When a deadlock occurs, the coordinator resolves it by **aborting one transaction**  
@@ -14,7 +14,7 @@ central coordination.
 
 ---
 
-# 🧩 Architecture
+# Architecture
 
 This project follows a **Coordinator–Transaction architecture** inspired by real distributed databases:
 
@@ -36,7 +36,7 @@ This architecture models how real systems coordinate distributed concurrency and
 
 ---
 
-# 🛠️ Dependencies
+# Dependencies
 
 This project uses only Python’s built-in libraries:
 
@@ -51,23 +51,7 @@ This project uses only Python’s built-in libraries:
 
 ---
 
-# 📂 Project Structure
-
-Group_08_WaitForGraph/
-│
-├── codes/
-│ ├── cordinator.py
-│ ├── transaction1.py
-│ ├── transaction2.py
-│ ├── requests.json (auto-created)
-│ ├── statuses.json (auto-created)
-│
-└── README.md
-
-
----
-
-# 🚀 How to Run the Entire Simulation (VS Code Task Runner)
+# How to Run the Entire Simulation (VS Code Task Runner)
 
 To simulate a distributed environment, all three programs must run **in parallel**.  
 VS Code Tasks will automatically open all required terminals.
@@ -76,26 +60,25 @@ Follow these exact steps:
 
 ---
 
-## ✔ 1️⃣ Open the project folder in VS Code
+Open the project folder in VS Code
 
 Group_08_WaitForGraph
 
-
 ---
 
-## ✔ 2️⃣ Press the command palette shortcut
+Press the command palette shortcut
 
 Ctrl + Shift + P
 
 ---
 
-## ✔ 3️⃣ Type and select:
+Type and select:
 
 Run Task
 
 ---
 
-## ✔ 4️⃣ Choose the task:
+Choose the task:
 
 Run All (Coordinator + T1 + T2)
 
@@ -109,7 +92,7 @@ All three begin executing simultaneously.
 
 ---
 
-## ✔ 5️⃣ When prompted:
+When prompted:
 
 **“Select a problem matcher for this task”**
 
@@ -120,7 +103,7 @@ Continue without scanning the task output
 
 ---
 
-# 🎬 Expected Execution Flow
+# Expected Execution Flow
 
 Once the tasks start:
 
@@ -135,6 +118,3 @@ Once the tasks start:
 
 This produces a clean, deterministic demonstration of deadlock detection and recovery.
 
----
-
-# 📌 End of README
