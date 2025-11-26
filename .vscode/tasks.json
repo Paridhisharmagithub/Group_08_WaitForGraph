@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Coordinator",
+      "type": "shell",
+      "command": "python codes/cordinator.py",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Transaction 1",
+      "type": "shell",
+      "command": "python codes/transaction1.py",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Transaction 2",
+      "type": "shell",
+      "command": "python codes/transaction2.py",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run All (Coordinator + T1 + T2)",
+      "dependsOn": [
+        "Run Coordinator",
+        "Run Transaction 1",
+        "Run Transaction 2"
+      ],
+      "dependsOrder": "parallel"
+    }
+  ]
+}
